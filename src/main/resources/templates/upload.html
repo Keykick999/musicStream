@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Details</title>
+    <link rel="stylesheet" href="/upload.css">
+</head>
+<body>
+<div class="container">
+    <div class="track-details">
+        <h2>Basic info</h2>
+        <div class="track-detail-section">
+            <label for="image-upload">Upload Image:</label>
+            <input type="file" id="image-upload" style="display:none">
+            <button id="image-upload-btn">Upload Image</button>
+        </div>
+        <div class="track-detail-section">
+            <label for="audio-upload">Upload Audio:</label>
+            <input type="file" id="audio-upload" accept="audio/*" style="display:none">
+            <button id="audio-upload-btn">Upload Audio</button>
+        </div>
+        <div class="track-detail-section">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" value="Y2mate.com - FREE JCole Type Beat FOREVER 320kbps">
+        </div>
+        <div class="track-detail-section">
+            <label for="permalink">Permalink:</label>
+            <input type="text" id="permalink" name="permalink" value="soundcloud.com/xyz/y2matecom-free-jcole-type-b...">
+        </div>
+        <div class="track-detail-section">
+            <label for="genre">Genre:</label>
+            <select id="genre" name="genre">
+                <option value="alternative">Alternative</option>
+                <option value="blues">Blues</option>
+                <option value="classical">Classical</option>
+                <option value="country">Country</option>
+                <option value="dance">Dance</option>
+                <option value="edm">EDM</option>
+                <option value="hiphop">Hip-Hop</option>
+                <option value="indie">Indie</option>
+                <option value="jazz">Jazz</option>
+                <option value="kpop">K-Pop</option>
+                <option value="latin">Latin</option>
+                <option value="metal">Metal</option>
+                <option value="pop">Pop</option>
+                <option value="rnb">R&B</option>
+                <option value="reggae">Reggae</option>
+                <option value="rock">Rock</option>
+                <option value="soul">Soul</option>
+                <option value="soundtrack">Soundtrack</option>
+                <option value="world">World</option>
+                <option value="folk">Folk</option>
+                <option value="punk">Punk</option>
+                <option value="gospel">Gospel</option>
+                <option value="grunge">Grunge</option>
+                <option value="house">House</option>
+                <option value="techno">Techno</option>
+                <option value="trance">Trance</option>
+                <option value="trap">Trap</option>
+                <option value="dubstep">Dubstep</option>
+                <option value="ambient">Ambient</option>
+                <option value="electro">Electro</option>
+                <option value="disco">Disco</option>
+                <option value="funk">Funk</option>
+                <option value="ska">Ska</option>
+                <option value="swing">Swing</option>
+                <option value="singer-songwriter">Singer-Songwriter</option>
+                <option value="instrumental">Instrumental</option>
+                <option value="children">Children</option>
+                <option value="holiday">Holiday</option>
+                <option value="blues-rock">Blues-Rock</option>
+                <option value="classical-crossover">Classical-Crossover</option>
+                <option value="comedy">Comedy</option>
+                <option value="acoustic">Acoustic</option>
+                <option value="alternative-rock">Alternative Rock</option>
+            </select>
+        </div>
+        <div class="track-detail-section">
+            <label for="tags">Additional tags:</label>
+            <input type="text" id="tags" name="tags">
+        </div>
+        <div class="track-detail-section">
+            <label for="description">Description:</label>
+            <textarea id="description" name="description"></textarea>
+        </div>
+        <div class="track-detail-section">
+            <label for="caption">Caption:</label>
+            <input type="text" id="caption" name="caption">
+        </div>
+        <div class="track-detail-section">
+            <label for="privacy">Privacy:</label>
+            <div>
+                <input type="radio" id="public" name="privacy" value="public" checked>
+                <label for="public">Public</label>
+                <input type="radio" id="private" name="privacy" value="private">
+                <label for="private">Private</label>
+                <input type="radio" id="scheduled" name="privacy" value="scheduled">
+                <label for="scheduled">Scheduled</label>
+            </div>
+        </div>
+        <button id="save-btn">Save</button>
+    </div>
+</div>
+<script src="/upload.js"></script>
+</body>
+</html>
